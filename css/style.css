@@ -1,0 +1,441 @@
+:root{
+    --black: #222222;
+    --pink: #F1E4E6;
+    --pink-pink: #F16D7F;
+    --white: #ffffff;
+    --gray: #9f9f9f;
+    --dark-pink: #ff6a6a;
+}
+
+
+body {
+    background-color: #E5E5E5;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 17px;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: var(--black);
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    min-height: 75px;
+    justify-content: space-between;
+}
+
+.header__menu {
+    display: none;
+}
+
+.header__box {
+    display: flex;
+}
+
+.header__logo {
+    margin: 0 41px 0 0;
+}
+
+.header__ico {
+    margin: 0 0 33px;
+}
+
+.header__button {
+    border: none;
+    background-color: transparent;
+}
+
+.brand {
+    display: flex;
+    background-color: var(--pink);
+
+}
+
+.brand-container {
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 92px;
+}
+
+.brand__title {
+    font-family: Lato;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 58px;
+    text-transform: uppercase;
+}
+
+.brand__subtitle {
+    display: block;
+    font-family: Lato;
+    font-size: 37px;
+    font-weight: 700;
+    line-height: 44px;
+}
+
+.brand__pink {
+    color: var(--pink-pink);
+}
+
+.sale {
+    margin-top: 65px;
+    text-transform: uppercase;
+}
+
+.sale__people {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.sale__women {
+    display: block;
+    padding: 105px 103px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    min-width: 360px;
+    background-image: url(../img/sale-women.jpg);
+}
+
+
+.sale__men {
+    display: block;
+    padding: 105px 103px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    min-width: 360px;
+    background-image: url(../img/sale-men.jpg);
+}
+
+.sale__kids {
+    display: block;
+    padding: 105px 103px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    min-width: 360px;
+    background-image: url(../img/sale-kids.jpg);
+}
+
+.sale__accesories {
+    margin-top: 30px;
+    padding: 65px 489px;
+    display: block;
+    background-image: url(../img/sale-accessories.jpg);
+}
+
+.sale__link {
+    -webkit-transition: opacity 0.4s ease;
+    transition: opacity 0.4s ease;
+}
+
+.sale__link:hover {
+    opacity: 0.7;
+}
+
+.sale__text {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: var(--white);
+    margin-bottom: 7px;
+}
+
+.sale__sabtitle {
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 19px;
+    text-align: center;
+    color: var(--pink-pink);
+}
+
+.product {
+    margin-top: 96px;
+    text-align: center;
+}
+
+.product__title {
+    text-transform: capitalize;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 36px;
+    color: var(--black);
+}
+
+.pruduct__text {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--gray);
+}
+
+.product__catalog {
+    margin-top: 48px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.product__catalog__item {
+    text-align: start;
+    width: 360px;
+    background: var(--white);
+    margin-bottom: 30px;
+}
+
+.product__catalog__item img {
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+}
+
+.product__catalog__item img:hover {
+    opacity: 0.7;
+}
+
+.product__catalog__cart{
+    padding: 25px 16px;
+}
+
+.product__item__title {
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    color: var(--black);
+    margin-bottom: 12px;
+    display: inline-block;
+    position: relative;
+}
+
+.product__item__title::before {
+    position: absolute;
+    width: 0px;
+    background-color: var(--black);
+    padding: 0px 0px 2px 0px;
+    top: 15px;
+}
+
+.product__item__title:hover::before {
+    width: 142px;
+}
+
+.product__item__text {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--gray);
+    margin-bottom: 18px;
+}
+
+.product__item__price {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--pink-pink);
+}
+
+.product__button {
+    cursor: pointer;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--dark-pink);
+    border: 1px solid var(--dark-pink);
+    background: none;
+    padding: 15px 39px;
+    margin-top: 46px;
+}
+
+.product__button:hover{
+    background-color: #fdb3bc;
+}
+
+.advantages {
+    background-color: var(--black);
+    color: var(--white);
+    margin-top: 100px;
+}
+
+.advantages__shop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 103px 0px;
+}
+
+.advantages__shop__item {
+    text-align: center;
+}
+
+.advantages__shop__img {
+    margin-bottom: 26px;
+}
+
+.advantages__shop__title {
+    text-transform: capitalize;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 16px;
+}
+
+.advantages__shop__text {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    width: 364px;
+}
+
+
+.footer__feedback{
+    background-image: url(../img/landscape.jpg);
+    background-repeat: round;
+    background-size: cover;
+}
+
+.feedback {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    padding: 86px 0 126px 0;
+}
+
+.feedback__info {
+    text-align: center;
+}
+
+.feedback__info__img {
+    margin-bottom: 30px;
+}
+
+.feedback__info_desc {
+    width: 230px;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.feedback__info__title {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.feedback__info__text {
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.feedback__info__e-mail {
+        text-transform: capitalize;
+    background: var(--white);
+    border: none;
+    border-radius: 20px 0 0 20px;
+    padding: 15px 0 15px 22px;
+    margin-right: -3px;
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+}
+
+.feedback__info__e-mail:hover {
+    background-color: var(--gray);
+}
+
+.feedback__info__e-mail:focus {
+    outline: none;
+    background-color: var(--gray);
+}
+
+.feedback__info__button {
+    text-transform: capitalize;
+    border: none;
+    background-color: var(--pink-pink);
+    padding: 15px 20px;
+    border-radius: 0 20px 20px 0;
+    color: #ffffff;
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+}
+
+.feedback__info__button:hover {
+    background-color: #ff3b56;
+}
+
+.footer__public {
+    background-color: var(--black);
+    padding: 20px 0;
+}
+
+.public {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.public__copyright {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--white);
+}
+
+.public__social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+} 
+
+.public__social a {
+    width: 31px;
+    height: 31px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 7px;
+}
