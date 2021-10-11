@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <script src="./js/script.js"></script>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <div class="header__box">
+                <a class="header__logo" href="./index.html"><img src="./img/logo.svg" alt="logo" width="44"
+                        height="38"></a>
+                <a class="header__search-ico" href="#"><img src="./img/loupe.svg" alt="loupe" width="26"
+                        height="27"></a>
+            </div>
+            <div class="header__box">
+                <button class="header__button" type="button"><img src="./img/burger.svg" alt="menu"
+                        onclick="showMenu();"></button>
+                <a class="header__person" href="./registration.html"><img src="./img/person.svg" alt="person"></a>
+                <a class="header__basket" href="#"><img src="./img/basket.svg" alt="basket"></a>
+                <nav class="menu">
+                    <button class="menu__button" onclick="showMenu();" type="button"><img src="./img/cross.svg"
+                            alt="cross" width="12" height="12"></button>
+                    <h2 class="menu__title">menu</h2>
+                    <ul class="menu__list">
+                        <li>
+                            <h3 class="menu__deck">man</h3>
+                            <ul class="menu__sub-title">
+                                <li><a class="menu__text" href="#"> Accessories</a></li>
+                                <li><a class="menu__text" href="#">Bags</a></li>
+                                <li><a class="menu__text" href="#">Denim</a></li>
+                                <li><a class="menu__text" href="#"> T-Shirts</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h3 class="menu__deck">woman</h3>
+                            <ul class="menu__sub-title">
+                                <li><a class="menu__text" href="#">Accessories</a></li>
+                                <li><a class="menu__text" href="#">Jackets & Coats</a></li>
+                                <li><a class="menu__text" href="#">Polos</a></li>
+                                <li><a class="menu__text" href="#">T-Shirts</a></li>
+                                <li><a class="menu__text" href="#">Shirts</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h3 class="menu__deck">kids</h3>
+                            <ul class="menu__sub-title">
+                                <li><a class="menu__text" href="#">Accessories</a></li>
+                                <li><a class="menu__text" href="#">Jackets & Coats</a></li>
+                                <li><a class="menu__text" href="#">Polos</a></li>
+                                <li><a class="menu__text" href="#">T-Shirts</a></li>
+                                <li><a class="menu__text" href="#">Shirts</a></li>
+                                <li><a class="menu__text" href="#">Bags</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="container human">
+            <h1 class="human__title">registration</h1>
+        </section>
+        <div class="wrp">
+            <section class="container form">
+                <form action="">
+
+                    <fieldset>
+                        <legend class="form__legend">Your Name</legend>
+                        <label class="form__registration">
+                            <input class="form__name" type="text" placeholder="First Name">
+                            <span class="visually-hidden"></span>
+                        </label>
+                        <label class="form__registration">
+                            <input class="form__name" type="text" placeholder="Last Name">
+                            <span class="visually-hidden"></span>
+                        </label>
+                    </fieldset>
+                    <div class="form__radio">
+                        <fieldset>
+                            <input class="form__radio-input" type="radio" id="male" value="Male">
+                            <label class="form__radio-label" for="male">Male</label>
+                            <input class="form__radio-input" type="radio" id="female" value="Female">
+                            <label class="form__radio-label" for="female">Female</label>
+                        </fieldset>
+                    </div>
+                    <fieldset>
+                        <legend class="form__legend">Login details</legend>
+                        <label class="form__registration">
+                            <input class="form__name" type="email" placeholder="E-mail">
+                            <span class="visually-hidden"></span>
+                        </label>
+                        <label class="form__registration">
+                            <input class="form__name" type="password" placeholder="Password">
+                            <span class="visually-hidden"></span>
+                        </label>
+                        <p class="form__text">Please use 8 or more characters, with at least 1 number and a mixture
+                            of
+                            uppercase and
+                            lowercase letters</p>
+                    </fieldset>
+                    <button class="form__button" type="submit">join now<img class="form__img" src="./img/arrow.svg"
+                            alt="arrow" width="17" height="10"></button>
+                </form>
+            </section>
+            <section class="container perks">
+                <h2 class="perks__title">loyalty has its perks</h2>
+                <p class="perks__text">Get in on the loyalty program where you can earn points and unlock serious perks.
+                    Starting with these
+                    as soon as you join:</p>
+                <ul class="perks__sub-title">
+                    <li class="perks__deck"><img class="perks__img" src="../Shop1/img/check-mark.svg" alt="check mark"
+                            width="20" height="16">15% off welcome
+                        offer
+                    </li>
+                    <li class="perks__deck"><img class="perks__img" src="../Shop1/img/check-mark.svg" alt="check mark"
+                            width="20" height="16">Free shipping,
+                        returns and exchanges on all orders</li>
+                    <li class="perks__deck"><img class="perks__img" src="../Shop1/img/check-mark.svg" alt="check mark"
+                            width="20" height="16">$10 off a purchase
+                        on
+                        your birthday</li>
+                    <li class="perks__deck"><img class="perks__img" src="../Shop1/img/check-mark.svg" alt="check mark"
+                            width="20" height="16">Early access to
+                        products</li>
+                    <li class="perks__deck"><img class="perks__img" src="../Shop1/img/check-mark.svg" alt="check mark"
+                            width="20" height="16">Exclusive offers &
+                        rewards</li>
+                </ul>
+            </section>
+        </div>
+    </main>
+    <footer class="footer__container">
+        <section class="feedback__img">
+            <div class="container feedback">
+                <div class="feedback__info">
+                    <img class="feedback__ico" src="./img/avatar.jpg" alt="photo avatar">
+                    <p class="feedback__desc">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar
+                        purus
+                        condimentum“</p>
+                </div>
+                <div class="feedback__info">
+                    <h2 class="feedback__title">Subscribe</h2>
+                    <p class="feedback__text">for our newletter and promotion</p>
+                    <form action="">
+                        <label>
+                            <input class="feedback__e-mail" type="e-mail" placeholder="enter yor email">
+                            <span class="visually-hidden"></span>
+                        </label>
+                        <label>
+                            <input class="feedback__button" type="submit" value="Subscribe">
+                            <span class="visually-hidden"></span>
+                        </label>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="public">
+            <div class="container public">
+                <p class="public__copyright">© 2021 Brand All Rights Reserved.</p>
+                <div class="public__social">
+                    <a href="#"><img class="public__face" src="./img/facebook.svg" alt="facebook" width="32"
+                            height="32"></a>
+                    <a href="#"><img class="public__insta" src="./img/insta.svg" alt="instagram" width="34"
+                            height="34"></a>
+                    <a href="#"><img class="public__pint" src="./img/pinterest.svg" alt="pinterest" width="32"
+                            height="32"></a>
+                    <a href="#"><img class="public__twit" src="./img/twitter.svg" alt="twitter" width="32"
+                            height="32"></a>
+                </div>
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>
